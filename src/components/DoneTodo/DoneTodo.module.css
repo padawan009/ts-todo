@@ -1,0 +1,28 @@
+.doneTodoBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 432px;
+}
+
+.doneTodoBlock h4 {
+  color: white;
+  margin: 0;
+}
+
+.doneTodoList {
+  padding: 0;
+  margin: 0;
+}
+
+.doneTodoList li {
+  color: rgba(120, 207, 176, 1);
+  width: 100%;
+  background-color: rgba(21, 16, 28, 1);
+  border-radius: 10px;
+  list-style: none;
+  padding: 20px;
+  margin-bottom: 12px;
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+}

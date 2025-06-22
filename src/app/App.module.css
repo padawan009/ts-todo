@@ -1,0 +1,18 @@
+.mainBlock {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  padding: 50px 80px 50px 60px;
+  border-radius: 20px;
+  margin: 100px auto;
+  width: max-content;
+  transition: all 0.5s;
+}
+
+.mainBlock:hover,
+.mainBlock:focus-within {
+  background-color: rgba(29, 24, 37, 1);
+}

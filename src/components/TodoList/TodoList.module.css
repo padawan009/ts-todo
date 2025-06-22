@@ -1,0 +1,48 @@
+.todoListBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 432px;
+}
+
+.todoListBlock h4 {
+  color: white;
+  margin: 0;
+}
+
+.todoList {
+  padding: 0;
+  margin: 0;
+}
+
+.todoList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(158, 120, 207, 1);
+  width: 100%;
+  background-color: rgba(21, 16, 28, 1);
+  border-radius: 10px;
+  list-style: none;
+  padding: 20px;
+  margin-bottom: 12px;
+}
+
+.btnContainer {
+  display: flex;
+  gap: 15px;
+}
+
+.btnContainer button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.btnContainer button img {
+  transition: all 0.3s;
+}
+
+.btnContainer button img:hover {
+  filter: brightness(50%);
+}
