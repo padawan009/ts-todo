@@ -1,5 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { Todo } from "./types";
+import { v4 as uuid } from 'uuid';
 
 interface TodosState {
     todos: Todo[]
@@ -9,15 +10,13 @@ const initialState: TodosState = {
     todos: [],
 }
 
-let nextId = 1
-
 const todosSlice = createSlice({
     name: 'todos',
     initialState,
     reducers: {
         addTodo(state, action: PayloadAction<string>) {
             state.todos.push({
-                id: nextId++,
+                id: uuid(),
                 text: action.payload,
                 completed: false,
             })
