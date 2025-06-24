@@ -1,4 +1,4 @@
-import { useAppDispatch } from "../../hooks";
+import { useAppDispatch } from "../../hooks/hooks";
 import React, { useState } from "react";
 import { addTodo } from "../../features/todos/todoSlice";
 import styles from "./AddTodo.module.css";

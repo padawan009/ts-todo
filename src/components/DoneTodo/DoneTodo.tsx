@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./DoneTodo.module.css";
-import { useAppSelector } from "../../hooks";
+import { useAppSelector } from "../../hooks/hooks";
 
 function DoneTodo() {
   const todos = useAppSelector((state) => state.todos.todos);

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./TodoList.module.css";
-import { useAppDispatch, useAppSelector } from "../../hooks";
+import { useAppDispatch, useAppSelector } from "../../hooks/hooks";
 import checkPic from "./images/Check.svg";
 import trashPic from "./images/TrashSimple.svg"
 import { deleteTodo, toggleTodo } from "../../../src/features/todos/todoSlice";
