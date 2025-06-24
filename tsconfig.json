@@ -17,13 +17,12 @@
     "strict": true,
     "target": "ES2020",
     "useDefineForClassFields": true,
+    "types": ["node"],
     // other
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
-    },
+      "@/*": ["./src/*"]
+    }
   },
   "include": ["src", "tailwind.config.cjs"],
   "references": [{ "path": "./tsconfig.node.json" }]
