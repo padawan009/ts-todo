@@ -21,11 +21,11 @@ const todosSlice = createSlice({
                 completed: false,
             })
         },
-        toggleTodo(state, action: PayloadAction<number>){
+        toggleTodo(state, action: PayloadAction<string>){
             const todo = state.todos.find((t) => t.id === action.payload)
             if (todo) todo.completed = !todo.completed
         },
-        deleteTodo(state, action: PayloadAction<number>){
+        deleteTodo(state, action: PayloadAction<string>){
             const updatedTodos = state.todos.filter(t => t.id !== action.payload)
             state.todos = updatedTodos
         }
